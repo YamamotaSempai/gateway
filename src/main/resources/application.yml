@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+eureka:
+  instance:
+    prefer-ip-address: true # registers the service ip rather than the server name
+  client:
+    register-with-eureka: true # register him self at eureka
+    fetch-registry: true # pull down a local copy of the registries
+    service-url:
+      defaultZone: http://localhost:8083/eureka # discovery service location
+
+spring:
+  application:
+    name: gateway-service
+  cloud:
+    discovery:
+      enabled: true
+    gateway:
+      discovery:
+        locator:
+          enabled: true # use netflix eureka discovery service
