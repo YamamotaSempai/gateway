@@ -20,3 +20,5 @@ spring:
       discovery:
         locator:
           enabled: true # use netflix eureka discovery service
+jwt:
+  secret: 'eyJhbGciOiJIUzI1NiJ9.eyJSb2xlIjoiQWRtaW4iLCJJc3N1ZXIiOiJJc3N1ZXIiLCJVc2VybmFtZSI6IkphdmFJblVzZSIsImV4cCI6MTYyODI0NDA0NCwiaWF0IjoxNjI4MjQ0MDQ0fQ.NLjdWWR4ZXAivy8_ukpgXfrp7-7A3AIhFr7DZhAg0Fw'
