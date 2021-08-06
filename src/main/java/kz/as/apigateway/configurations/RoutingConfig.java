@@ -21,7 +21,11 @@ public class RoutingConfig {
         return builder.routes()
                 .route("auth-route", r -> r
                         .path("/auth-service/**")
-                        .filters(f -> f.filter(authenticationFilter))
+                        .filters(f -> {
+                            f = f.stripPrefix(1);
+                            f.filter(authenticationFilter);
+                            return f;
+                        })
                         .uri("lb://auth-service/")
                 )
                 .build();
