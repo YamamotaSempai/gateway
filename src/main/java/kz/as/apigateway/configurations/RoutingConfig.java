@@ -20,7 +20,7 @@ public class RoutingConfig {
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
         return builder.routes()
                 .route("auth-route", r -> r
-                        .path("/auth/**")
+                        .path("/auth-service/**")
                         .filters(f -> f.filter(authenticationFilter))
                         .uri("lb://auth-service/")
                 )
