@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk-alpine
-ARG JAR_FILE=target/*.jar
-COPY ${JAR_FILE} app.jar
-ENTRYPOINT ["java","-jar","/app.jar"]
+FROM openjdk:11
+MAINTAINER aidos.jantleu@gmail.com
+COPY target/api-gateway-*.war api-gateway.jar
+ENTRYPOINT ["java","-jar","/api-gateway.jar"]
