@@ -8,7 +8,7 @@ eureka:
     register-with-eureka: true # register him self at eureka
     fetch-registry: true # pull down a local copy of the registries
     service-url:
-      defaultZone: http://localhost:8083/eureka # discovery service location
+      defaultZone: http://backend-eureka:8083/eureka # discovery service location
 
 spring:
   application:
