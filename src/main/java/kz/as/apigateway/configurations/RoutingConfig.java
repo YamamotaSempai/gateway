@@ -28,6 +28,15 @@ public class RoutingConfig {
                         })
                         .uri("lb://auth-service/")
                 )
+                .route("baza-route", r -> r
+                        .path("/baza-service/**")
+                        .filters(f -> {
+                            f = f.stripPrefix(1);
+                            f.filter(authenticationFilter);
+                            return f;
+                        })
+                        .uri("lb://baza-service/")
+                )
                 .build();
     }
 }
