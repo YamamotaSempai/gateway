@@ -1,7 +1,7 @@
-package kz.as.apigateway.configurations;
+package kz.aa.apigateway.configurations;
 
 import io.jsonwebtoken.Claims;
-import kz.as.apigateway.utils.JwtUtil;
+import kz.aa.apigateway.utils.JwtUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.cloud.gateway.filter.GatewayFilter;

@@ -1,4 +1,4 @@
-package kz.as.apigateway.configurations;
+package kz.aa.apigateway.configurations;
 
 import org.springframework.http.server.reactive.ServerHttpRequest;
 

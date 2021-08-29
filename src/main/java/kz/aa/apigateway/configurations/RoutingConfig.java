@@ -1,4 +1,4 @@
-package kz.as.apigateway.configurations;
+package kz.aa.apigateway.configurations;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.gateway.route.RouteLocator;
