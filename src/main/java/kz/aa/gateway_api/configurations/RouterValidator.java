@@ -1,4 +1,4 @@
-package kz.aa.apigateway.configurations;
+package kz.aa.gateway_api.configurations;
 
 import org.springframework.http.server.reactive.ServerHttpRequest;
 
@@ -11,7 +11,7 @@ public class RouterValidator {
     }
 
     private static final List<String> OPEN_API_ENDPOINTS = List.of(
-            "/auth/register",
+            "/auth/registration",
             "/auth/login"
     );
 

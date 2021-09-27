@@ -1,4 +1,4 @@
-package kz.aa.apigateway.utils;
+package kz.aa.gateway_api.utils;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

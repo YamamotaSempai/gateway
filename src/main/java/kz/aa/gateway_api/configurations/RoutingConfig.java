@@ -1,4 +1,4 @@
-package kz.aa.apigateway.configurations;
+package kz.aa.gateway_api.configurations;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cloud.gateway.route.RouteLocator;
@@ -20,22 +20,22 @@ public class RoutingConfig {
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
         return builder.routes()
                 .route("auth-route", r -> r
-                        .path("/auth-service/**")
+                        .path("/auth-api/**")
                         .filters(f -> {
                             f = f.stripPrefix(1);
                             f.filter(authenticationFilter);
                             return f;
                         })
-                        .uri("lb://auth-service/")
+                        .uri("lb://auth-api/")
                 )
                 .route("baza-route", r -> r
-                        .path("/baza-service/**")
+                        .path("/baza-api/**")
                         .filters(f -> {
                             f = f.stripPrefix(1);
                             f.filter(authenticationFilter);
                             return f;
                         })
-                        .uri("lb://baza-service/")
+                        .uri("lb://baza-api/")
                 )
                 .build();
     }

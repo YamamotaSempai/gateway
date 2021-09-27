@@ -1,4 +1,4 @@
 FROM openjdk:11
 MAINTAINER aidos.jantleu@gmail.com
-COPY target/api-gateway-*.war api-gateway.jar
-ENTRYPOINT ["java","-jar","/api-gateway.jar"]
+COPY target/gateway-api-*.war gateway-api.jar
+ENTRYPOINT ["java","-jar","/gateway-api.jar"]
