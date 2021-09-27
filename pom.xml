@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>kz.aa</groupId>
-	<artifactId>api-gateway</artifactId>
+	<artifactId>gateway-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>api-gateway</name>
+	<name>gateway-api</name>
 	<description>Project for the implementation of a single register in Kazakhstan</description>
 	<properties>
 		<java.version>11</java.version>
